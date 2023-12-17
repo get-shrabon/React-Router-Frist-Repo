@@ -35,7 +35,7 @@ const Header = () => {
       <div className="text-2xl md:hidden" onClick={() => setOpen(!open)}>
         {open === true ? <IoClose /> : <RiMenu2Fill />}
       </div>
-      <ul className={`md:flex sm:flex-none absolute md:static gap-10 justify-center duration-700 ${open ? "-top-100" : "top-100 bg-slate-300 text-black p-5"}`}>
+      <ul className={`md:flex sm:flex-none absolute md:static gap-10 justify-center duration-700 ${open ? "-top-100" : "top-100  p-5"}`}>
         {routes.map((route) => (
           <li className="list-none" key={route.id}>
             <a className="hover:text-red-50 duration-200" href={route.path}>
